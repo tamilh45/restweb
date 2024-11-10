@@ -1,5 +1,5 @@
 # Ex-6 Restaurant Website
-## Date: 20/10/24
+## Date:
 
 ## AIM:
 To develop a static Restaurant website to display the food items and services provided by them.
