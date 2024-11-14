@@ -36,189 +36,157 @@ Publish the website in the given URL.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Little Lemon</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Hotel Restaurant Food Menu</title>
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Little Lemon Logo">
-            <h1>Little Lemon</h1>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Book</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
+        <h1>Hotel Restaurant</h1>
+        <h2>Food Menu</h2>
     </header>
     <main>
-        <section class="banner" style="background-image: url('offer.webp');">
-            <h2 class="offer-txt">30% Off This Weekend</h2>
-            <p class = 'offer-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et congue massa, eu fringilla mauris. Fusce dapibus vehicula ex at ultrices. Duis at varius ligula. Integer pulvinar tempus quam, et consequat nulla viverra in. Nullam ut tortor magna. Nulla eget placerat leo. Nunc eu finibus magna, sed vulputate magna.</p>
-        </section>
-        <section class="features">
-            <div class="feature">
-                <h3>Our New Menu</h3>
-                <img src="menu.jpeg" alt="Our New Menu">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et congue massa, eu fringilla mauris. Fusce dapibus vehicula ex at ultrices. Duis at varius ligula. Integer pulvinar tempus quam, et consequat nulla viverra in. Nullam ut tortor magna. Nulla eget placerat leo. Nunc eu finibus magna, sed vulputate magna.</p>
-                <a href="www.google.com">See our new menu</a>
+        <section class="menu-category">
+            <h3>Starters</h3>
+            <div class="menu-item">
+                <h4>Bruschetta</h4>
+                <p class="description">Grilled bread with tomatoes, garlic, and basil.</p>
+                <p class="price">$8.99</p>
+                <img src="download (3).jpg" alt="right">
             </div>
-            <div class="feature">
-                <h3>Book a table</h3>
-                <img src="book.jpeg" alt="Book a table">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et congue massa, eu fringilla mauris. Fusce dapibus vehicula ex at ultrices. Duis at varius ligula. Integer pulvinar tempus quam, et consequat nulla viverra in. Nullam ut tortor magna. Nulla eget placerat leo. Nunc eu finibus magna, sed vulputate magna.</p>
-                <a href="www.google.com">Book your table now</a>
+
+        <section class="menu-category">
+            <h3>Main Courses</h3>
+            <div class="menu-item">
+                <h4>Grilled Salmon</h4>
+                <p class="description">Fresh salmon fillet grilled to perfection.</p>
+                <p class="price">$18.99</p>
+                <img src="istockphoto-1214416414-612x612.jpg" height="180px" width="200px">
             </div>
-            <div class="feature">
-                <h3>Opening Hours</h3>
-                <img src="hours.jpeg" class="hours" alt="Opening Hours">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et congue massa, eu fringilla mauris. Fusce dapibus vehicula ex at ultrices.</p>
-                <ul>
-                    Monday - Friday: 11:00 AM - 10:00 PM <br>
-                    Saturday: 10:00 AM - 11:00 PM <br>
-                    Sunday: 10:00 AM - 9:00 PM <br>
-                </ul>
+            <div class="menu-item">
+                <h4>Beef Steak</h4>
+                <p class="description">Juicy rib-eye steak served with mashed potatoes and vegetables.</p>
+                <p class="price">$22.99</p>
+                <img src="download.jpg" >
+            
             </div>
         </section>
-        <footer>
-            <div class="logo">
-                <img src="footer.png" class="footer" alt="Little Lemon Logo">
-                <p class="copy">&copy; Copyright Little Lemon</p>
+
+        <section class="menu-category">
+            <h3>Desserts</h3>
+            <div class="menu-item">
+                <h4>Chocolate Cake</h4>
+                <p class="description">Rich and moist chocolate cake with a layer of creamy frosting.</p>
+                <p class="price">$6.99</p>
+                <img src="download (2).jpg" height="160px" width="200px" >
             </div>
-        </footer>
+            <div class="menu-item">
+                <h4>Tiramisu</h4>
+                <p class="description">Classic Italian dessert made with coffee-soaked ladyfingers and mascarpone cream.</p>
+                <p class="price">$7.99</p>
+                <img src="download (1).jpg" >
+
+            </div>
+        </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Hotel Restaurant. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
 ```
 
 ### CSS
 ```
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #b9fbe9;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(50564337-D81_1271_Farmhouse_MI.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #333;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: rgb(162, 211, 176);
-    border-radius: 10px;
-}
-
-.menu{
-    background-color: black;
-    color: rgb(250, 4, 4);
-    padding: 25px;
-    border-radius: 30px;
-}
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 50px;
-    height: 80px;
-    margin-right: 10px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-.footer{
-    padding: 10px 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.offer-txt{
-    color: black;
-}
-.hours{
-    width: 300px;
-    height: 80px;
-}
-
-.banner {
     text-align: center;
-    background: url('banner.jpg') no-repeat center center/cover;
-    padding: 60px 20px;
-    color: #fff;
-    border-radius: 10px;
-    margin: 25px;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
 }
 
-.banner h2 {
-    font-size: 2.5em;
-    margin: 0 0 20px;
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
-.features {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: rgb(162, 211, 176);
-}
-
-.feature {
-    text-align: center;
-    background-color: rgb(240, 202, 133);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    margin: 0 10px;
-}
-
-.feature h3 {
+header h2 {
     font-size: 1.5em;
-    margin-bottom: 20px;
 }
 
-.feature img {
-    max-width: 100%;
-    height: auto;
+main {
+    padding: 20px;
+}
+
+.menu-category {
+    margin-bottom: 30px;
+}
+
+.menu-category h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.menu-item {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-p {
-    text-align: left;
+.menu-item h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    
 }
 
-ul {
-    text-align: left;
+.menu-item .description {
+    font-size: 1em;
+    margin-bottom: 10px;
 }
 
-.copy{
-    margin-left: auto
+.menu-item .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f75c03;
 }
 
-.hyperlink{
-    color: blue;
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
 }
+
+
 ```
 
 ## OUTPUT:
-![WhatsApp Image 2024-10-18 at 11 39 10_c2a1cce4](https://github.com/user-attachments/assets/b9ff0d6d-64b2-4a49-8220-c754159bd62a)
+![Screenshot 2024-11-14 134541](https://github.com/user-attachments/assets/ed3e3744-c7a8-4bcc-b916-c132c30b80d3)
+![Screenshot 2024-11-14 134551](https://github.com/user-attachments/assets/5de4ac85-6976-49a1-a735-a06ec920eaea)
+![Screenshot 2024-11-14 134602](https://github.com/user-attachments/assets/c95702e5-7a95-48a1-99bf-d326cad331f4)
 
 
 ## RESULT:
